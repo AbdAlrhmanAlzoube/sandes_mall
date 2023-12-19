@@ -26,16 +26,16 @@
           <i class="fa fa-dashboard"></i> <span>Categories</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="index.html"><i class="fa fa-circle-o"></i>Category List</a></li>
-          <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Add Category</a></li>
+          <li><a href="{{ route('categories.index') }}"><i class="fa fa-circle-o"></i>Category List</a></li>
+          <li ><a href="{{ route('categories.create') }}"><i class="fa fa-circle-o"></i> Add Category</a></li>
         </ul>
         
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Products</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="index.html"><i class="fa fa-circle-o"></i>Product List</a></li>
-          <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i>Add Product</a></li>
+          <li><a href="{{ route('products.index') }}"><i class="fa fa-circle-o"></i>Product List</a></li>
+          <li class="active"><a href="{{ route('products.create') }}"><i class="fa fa-circle-o"></i>Add Product</a></li>
         </ul>
 
         <a href="#">

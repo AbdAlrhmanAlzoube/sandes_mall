@@ -14,9 +14,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+       $categories = Category::all();
 
-        return view('admin.index', compact('categories'));
+       return view('admin.index', compact('categories'));
+
     }
 
     /**
@@ -35,7 +36,7 @@ class CategoryController extends Controller
         $categories = $request->validated();
         Category::create($categories);
 
-        return redirect()->route('categories.index');
+       return redirect ()->route('categories.index')->with('success', 'Category added successfully.');
     }
 
     /**
@@ -55,7 +56,7 @@ class CategoryController extends Controller
         $category_data = $request->validated();
         $category->update($category_data);
 
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with('success', 'Category updated successfully.');
     }
 
     /**
@@ -65,6 +66,6 @@ class CategoryController extends Controller
     {
         $category->delete();
 
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with('delete', 'Category deleted successfully.');
     }
 }

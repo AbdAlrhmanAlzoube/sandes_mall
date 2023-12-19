@@ -28,7 +28,22 @@
        
       </header>
       
-      @include('Admin.layouts.sidebar')
+       <!-- Left side column. contains the logo and sidebar -->
+       @include('Admin.layouts.sidebar')
+
+      <!-- Right side column. Contains the navbar and content of the page -->
+      <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content">
+          <!-- Info boxes -->
+         @yield('content')
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+     
+     
+    </div><!-- /.content-wrapper -->
 
      
      
