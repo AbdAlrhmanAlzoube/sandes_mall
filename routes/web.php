@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\Cashier\CashierController;
+use App\Http\Controllers\Admin\Category\CategoryController;
 use App\Http\Controllers\Admin\Product\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,6 @@ Route::get('/Admin',function(){
     return view('Admin.index');
 });
 
-Route::resource('categories', CategoryController::class);
+Route::resource('categories', CategoryController::class);   
 Route::resource('products', ProductController::class);
+Route::resource('cashiers', CashierController::class);

@@ -15,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('cashiers', function (Blueprint $table) {
             $table->id();
+          
             $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Product::class);
-            $table->string('name');
+
+            $table->string('department');
             $table->timestamps();
         });
     }

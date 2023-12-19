@@ -39,11 +39,11 @@
         </ul>
 
         <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Sellers</span> <i class="fa fa-angle-left pull-right"></i>
+          <i class="fa fa-dashboard"></i> <span>Cashiers</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="index.html"><i class="fa fa-circle-o"></i>Seller List</a></li>
-          <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i>Add Seller</a></li>
+          <li><a href="{{route('cashiers.index')}}"><i class="fa fa-circle-o"></i>Cashier List</a></li>
+          <li class="active"><a href="{{route('cashiers.create')}}"><i class="fa fa-circle-o"></i>Add Cashier</a></li>
         </ul>
 
 
